@@ -2,6 +2,11 @@ slats = {}
 
 function slats.register_slat(subname, recipeitem, groups, image, description, sounds)
 	groups.slab = 1
+
+	-- nodebox limits
+	local nb1 = 0.5
+	local nb2 = 0.49
+
 	minetest.register_node(":slats:slat_" .. subname, {
 		description = description,
 		drawtype = "nodebox",
@@ -16,9 +21,9 @@ function slats.register_slat(subname, recipeitem, groups, image, description, so
 		sounds = sounds,
 		node_box = {
 			type = "wallmounted",
-				wall_top    = {-0.5, 0.49, -0.5, 0.5, 0.49, 0.5},
-				wall_bottom = {-0.5, -0.49, -0.5, 0.5, -0.49, 0.5},
-				wall_side   = {-0.49, -0.5, -0.5, -0.49, 0.5, 0.5},
+				wall_top    = {-nb1, nb2, -nb1, nb1, nb2, nb1},
+				wall_bottom = {-nb1, -nb2, -nb1, nb1, -nb2, nb1},
+				wall_side   = {-nb2, -nb1, -nb1, -nb2, nb1, nb1},
 		},
 	})
 
