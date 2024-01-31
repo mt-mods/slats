@@ -1,135 +1,120 @@
 
-slats.register_slat(
-	"stone_block",
-	"default:stone_block",
-	{cracky = 2},
-	"default_stone_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Stone Block Slat",
-	default.node_sound_stone_defaults()
-)
+slats.register("stone_block", {
+	recipeitem = "default:stone_block",
+	groups = {cracky = 2},
+	base_texture = "default_stone_block.png",
+	description = "Stone Block Slat",
+	sounds = default.node_sound_stone_defaults()
+})
 
-slats.register_slat(
-	"desert_stone_block",
-	"default:desert_stone_block",
-	{cracky = 2},
-	"default_desert_stone_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Desert Stone Block Slat",
-	default.node_sound_stone_defaults()
-)
+slats.register("desert_stone_block", {
+	recipeitem = "default:desert_stone_block",
+	groups = {cracky = 2},
+	base_texture = "default_desert_stone_block.png",
+	description = "Desert Stone Block Slat",
+	sounds = default.node_sound_stone_defaults()
+})
 
-slats.register_slat(
-	"sandstone_block",
-	"default:sandstone_block",
-	{cracky = 2},
-	"default_sandstone_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Sandstone Block Slat",
-	default.node_sound_stone_defaults()
-)
+slats.register("sandstone_block", {
+	recipeitem = "default:sandstone_block",
+	groups = {cracky = 2},
+	base_texture = "default_sandstone_block.png",
+	description = "Sandstone Block Slat",
+	sounds = default.node_sound_stone_defaults()
+})
 
-slats.register_slat(
-	"desert_sandstone_block",
-	"default:desert_sandstone_block",
-	{cracky = 2},
-	"default_desert_sandstone_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Desert Sandstone Block Slat",
-	default.node_sound_stone_defaults()
-)
+slats.register("desert_sandstone_block", {
+	recipeitem = "default:desert_sandstone_block",
+	groups = {cracky = 2},
+	base_texture = "default_desert_sandstone_block.png",
+	description = "Desert Sandstone Block Slat",
+	sounds = default.node_sound_stone_defaults()
+})
 
-slats.register_slat(
-	"silver_sandstone_block",
-	"default:silver_sandstone_block",
-	{cracky = 2},
-	"default_silver_sandstone_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Silver Sandstone Block Slat",
-	default.node_sound_stone_defaults()
-)
+slats.register("silver_sandstone_block", {
+	recipeitem = "default:silver_sandstone_block",
+	groups = {cracky = 2},
+	base_texture = "default_silver_sandstone_block.png",
+	description = "Silver Sandstone Block Slat",
+	sounds = default.node_sound_stone_defaults()
+})
 
-slats.register_slat(
-	"obsidian_block",
-	"default:obsidian_block",
-	{cracky = 1, level = 2},
-	"default_obsidian_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Obsidian Block Slat",
-	default.node_sound_stone_defaults()
-)
+slats.register("obsidian_block", {
+	recipeitem = "default:obsidian_block",
+	groups = {cracky = 1, level = 2},
+	base_texture = "default_obsidian_block.png",
+	description = "Obsidian Block Slat",
+	sounds = default.node_sound_stone_defaults()
+})
 
-slats.register_slat(
-	"steelblock",
-	"default:steelblock",
-	{cracky = 1, level = 2},
-	"default_steel_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Steel Block Slat",
-	default.node_sound_metal_defaults()
-)
+slats.register("steelblock", {
+	recipeitem = "default:steelblock",
+	groups = {cracky = 1, level = 2},
+	base_texture = "default_steel_block.png",
+	description = "Steel Block Slat",
+	sounds = default.node_sound_metal_defaults()
+})
 
-slats.register_slat(
-	"copperblock",
-	"default:copperblock",
-	{cracky = 1, level = 2},
-	"default_copper_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Copper Block Slat",
-	default.node_sound_metal_defaults()
-)
+slats.register("copperblock", {
+	recipeitem = "default:copperblock",
+	groups = {cracky = 1, level = 2},
+	base_texture = "default_copper_block.png",
+	description = "Copper Block Slat",
+	sounds = default.node_sound_metal_defaults()
+})
 
-slats.register_slat(
-	"bronzeblock",
-	"default:bronzeblock",
-	{cracky = 1, level = 2},
-	"default_bronze_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Bronze Block Slat",
-	default.node_sound_metal_defaults()
-)
+slats.register("bronzeblock", {
+	recipeitem = "default:bronzeblock",
+	groups = {cracky = 1, level = 2},
+	base_texture = "default_bronze_block.png",
+	description = "Bronze Block Slat",
+	sounds = default.node_sound_metal_defaults()
+})
 
-slats.register_slat(
-	"goldblock",
-	"default:goldblock",
-	{cracky = 1},
-	"default_gold_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Gold Block Slat",
-	default.node_sound_metal_defaults()
-)
+slats.register("goldblock", {
+	recipeitem = "default:goldblock",
+	groups = {cracky = 1},
+	base_texture = "default_gold_block.png",
+	description = "Gold Block Slat",
+	sounds = default.node_sound_metal_defaults()
+})
 
-slats.register_slat(
-	"wood",
-	"default:wood",
-	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
-	"default_wood.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Wooden Slat",
-	default.node_sound_wood_defaults()
-)
+slats.register("wood", {
+	recipeitem = "default:wood",
+	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
+	base_texture = "default_wood.png",
+	description = "Wooden Slat",
+	sounds = default.node_sound_wood_defaults()
+})
 
-slats.register_slat(
-	"junglewood",
-	"default:junglewood",
-	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
-	"default_junglewood.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Jungle Wood Slat",
-	default.node_sound_wood_defaults()
-)
+slats.register("junglewood", {
+	recipeitem = "default:junglewood",
+	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
+	base_texture = "default_junglewood.png",
+	description = "Jungle Wood Slat",
+	sounds = default.node_sound_wood_defaults()
+})
 
-slats.register_slat(
-	"pine_wood",
-	"default:pine_wood",
-	{choppy = 3, oddly_breakable_by_hand = 2, flammable = 3},
-	"default_pine_wood.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Pine Wood Slat",
-	default.node_sound_wood_defaults()
-)
+slats.register("pine_wood", {
+	recipeitem = "default:pine_wood",
+	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
+	base_texture = "default_pine_wood.png",
+	description = "Pine Wood Slat",
+	sounds = default.node_sound_wood_defaults()
+})
 
-slats.register_slat(
-	"acacia_wood",
-	"default:acacia_wood",
-	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
-	"default_acacia_wood.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Acacia Wood Slat",
-	default.node_sound_wood_defaults()
-)
+slats.register("acacia_wood", {
+	recipeitem = "default:acacia_wood",
+	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2},
+	base_texture = "default_acacia_wood.png",
+	description = "Acacia Wood Slat",
+	sounds = default.node_sound_wood_defaults()
+})
 
-slats.register_slat(
-	"aspen_wood",
-	"default:aspen_wood",
-	{choppy = 3, oddly_breakable_by_hand = 2, flammable = 3},
-	"default_aspen_wood.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Aspen Wood Slat",
-	default.node_sound_wood_defaults()
-)
+slats.register("aspen_wood", {
+	recipeitem = "default:aspen_wood",
+	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
+	base_texture = "default_aspen_wood.png",
+	description = "Aspen Wood Slat",
+	sounds = default.node_sound_wood_defaults()
+})
