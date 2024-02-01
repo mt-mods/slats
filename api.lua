@@ -23,8 +23,13 @@ end
 function slats.register(subname, opts)
 	-- provide defaults
 	assert(type(opts) == "table", "invalid options")
-	assert(type(opts.base_texture) == "string", "no base_texture defined")
+	assert(type(opts.image) == "string" or type(opts.base_texture) == "string", "no image or base_texture defined")
 	opts.groups = opts.groups or {}
+
+	if opts.base_texture then
+		-- create texture with base-texture
+		opts.image = opts.base_texture .. "^slats_slat_overlay.png^[makealpha:255,126,126"
+	end
 
 	local nodename = "slats:slat_" .. subname
 	-- check for duplication
