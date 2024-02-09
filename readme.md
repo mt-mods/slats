@@ -20,14 +20,13 @@ Modding api
 
 Example: stone block registration from the `default` mod:
 ```lua
-slats.register_slat(
-	"stone_block",
-	"default:stone_block", -- optional, can be nil
-	{cracky = 2}, -- optional, can be nil
-	"default_stone_block.png^slats_slat_overlay.png^[makealpha:255,126,126",
-	"Stone Block Slat", -- optional
-	default.node_sound_stone_defaults() -- optional
-)
+slats.register("stone_block", {
+	base_texture = "default_stone_block.png", -- manadatory
+	recipeitem = "default:stone_block", -- optional, can be nil
+	groups = {cracky = 2}, -- optional, can be nil
+	description = "Stone Block Slat", -- optional
+	sounds = default.node_sound_stone_defaults() -- optional
+})
 ```
 
 # License
