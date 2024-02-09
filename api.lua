@@ -24,7 +24,13 @@ function slats.register(subname, opts)
 	-- provide defaults
 	assert(type(opts) == "table", "invalid options")
 	assert(type(opts.image) == "string" or type(opts.base_texture) == "string", "no image or base_texture defined")
-	opts.groups = opts.groups or {}
+	if opts.groups then
+		-- copy groups to prevent accidental modification after registration
+		opts.groups = table.copy(opts.groups)
+	else
+		-- empty group table
+		opts.groups = {}
+	end
 
 	if opts.base_texture then
 		-- create texture with base-texture
