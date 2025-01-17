@@ -57,6 +57,7 @@ function slats.register(subname, opts)
 		paramtype2 = "wallmounted",
 		is_ground_content = false,
 		sunlight_propagates = true,
+		use_texture_alpha = "clip",
 		groups = opts.groups,
 		sounds = opts.sounds,
 		node_box = {
