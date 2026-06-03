@@ -1,5 +1,5 @@
 
-local has_default_mod = minetest.get_modpath("default")
+local has_default_mod = core.get_modpath("default")
 
 -- main crafting ingredient for the slat recipe
 local base_recipe_ingredient
@@ -39,7 +39,7 @@ function slats.register(subname, opts)
 
 	local nodename = "slats:slat_" .. subname
 	-- check for duplication
-	assert(not minetest.registered_nodes[nodename], "slat already registered: " .. subname)
+	assert(not core.registered_nodes[nodename], "slat already registered: " .. subname)
 
 	opts.groups.slab = 1
 
@@ -47,7 +47,7 @@ function slats.register(subname, opts)
 	local nb1 = 0.5
 	local nb2 = 0.49
 
-	minetest.register_node(":" .. nodename, {
+	core.register_node(":" .. nodename, {
 		description = opts.description,
 		drawtype = "nodebox",
 		tiles = {opts.image},
@@ -70,7 +70,7 @@ function slats.register(subname, opts)
 
 	if opts.recipeitem then
 		if base_recipe_ingredient then
-			minetest.register_craft({
+			core.register_craft({
 				type = "shapeless",
 				output = 'slats:slat_' .. subname .. ' 12',
 				recipe = {opts.recipeitem, base_recipe_ingredient},
@@ -78,13 +78,13 @@ function slats.register(subname, opts)
 		end
 
 		-- Fuel
-		local baseburntime = minetest.get_craft_result({
+		local baseburntime = core.get_craft_result({
 			method = "fuel",
 			width = 1,
 			items = {opts.recipeitem}
 		}).time
 		if baseburntime > 0 then
-			minetest.register_craft({
+			core.register_craft({
 				type = "fuel",
 				recipe = 'slats:slat_' .. subname,
 				burntime = math.floor(baseburntime * 0.5),

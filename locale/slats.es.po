@@ -1,0 +1,78 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-02 19:42-0500\n"
+"PO-Revision-Date: 2026-06-02 19:42-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: default.lua:7
+msgid "Stone Block Slat"
+msgstr "Listón de bloque de piedra"
+
+#: default.lua:15
+msgid "Desert Stone Block Slat"
+msgstr "Listón de bloque de piedra del desierto"
+
+#: default.lua:23
+msgid "Sandstone Block Slat"
+msgstr "Listón de bloque de arenisca"
+
+#: default.lua:31
+msgid "Desert Sandstone Block Slat"
+msgstr "Listón de bloque de arenisca del desierto"
+
+#: default.lua:39
+msgid "Silver Sandstone Block Slat"
+msgstr "Listón de bloque de arenisca plateada"
+
+#: default.lua:47
+msgid "Obsidian Block Slat"
+msgstr "Listón de bloque de obsidiana"
+
+#: default.lua:55
+msgid "Steel Block Slat"
+msgstr "Listón de bloque de acero"
+
+#: default.lua:63
+msgid "Copper Block Slat"
+msgstr "Listón de bloque de cobre"
+
+#: default.lua:71
+msgid "Bronze Block Slat"
+msgstr "Listón de bloque de bronce"
+
+#: default.lua:79
+msgid "Gold Block Slat"
+msgstr "Listón de bloque de oro"
+
+#: default.lua:87
+msgid "Wooden Slat"
+msgstr "Listón de madera"
+
+#: default.lua:95
+msgid "Jungle Wood Slat"
+msgstr "Listón de madera de jungla"
+
+#: default.lua:103
+msgid "Pine Wood Slat"
+msgstr "Listón de madera de pino"
+
+#: default.lua:111
+msgid "Acacia Wood Slat"
+msgstr "Listón de madera de acacia"
+
+#: default.lua:119
+msgid "Aspen Wood Slat"
+msgstr "Listón de madera de álamo temblón"
