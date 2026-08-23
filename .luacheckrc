@@ -7,10 +7,11 @@ read_globals = {
 	string = {fields = {"split"}},
 	table = {fields = {"copy", "getn"}},
 
-	-- Minetest
+	-- Luanti
 	"vector", "ItemStack",
 	"dump", "minetest",
 	"VoxelManip", "VoxelArea",
+	"core",
 
 	-- mods
 	"default"
